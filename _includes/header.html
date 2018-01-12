@@ -29,16 +29,24 @@
          <nav id="sidebar">
            <span id="sidebarCollapse"  aria-hidden="true"
            data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-             <i class="fa fa-bars"></i>{{site.title}}</span>
+             <button class="hamburger hamburger--squeeze" type="button">
+               <span class="hamburger-box">
+                 <span class="hamburger-inner"></span>
+               </span>
+             </button>
+           </span>
+             <span id="site-title"><a href="/home/">{{site.title}}</a></span>
            <!-- Sidebar Links -->
            <ul class="collapse list-unstyled components" id="collapseExample">
-             <li><a href="#">faces</a></li>
-             <li><a href="">maine</a></li>
-             <li><a href="#">everything is permitted</a></li>
+             <li><a href="/faces/">faces</a></li>
+             <li><a href="/maine/">maine</a></li>
+             <li><a href="/eip/">everything is permitted</a></li>
              <br />
-             <li><a href="views/about.html">about</a></li>
-             <li><a href="#">contact</a></li>
-             <li><a href="#">cv</a></li>
+             <li><a href="/comissioned/">comissioned</a></li>
+             <br />
+             <li><a href="/about/">about</a></li>
+             <li><a href="/contact/">contact</a></li>
+             <li><a href="/home/">home</a></li>
            </ul>
          </nav>
        </div>

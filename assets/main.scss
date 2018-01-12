@@ -1,17 +1,46 @@
+---
+---
+@import "_variables";
+
+$hamburger-layer-width: 20px;
+$hamburger-layer-spacing: 3px;
+$hamburger-padding-x: 3px;
+$hamburger-padding-y: 3px;
+
+@import "hamburgers/hamburgers.scss";
 
 html {
   overflow-x: hidden;
 }
 body .wrapper {
+  font-family: $font-body;
   margin: 0 auto;
   padding: 10px;
 }
 i {
   padding: 2px;
 }
-a {
-  padding: 5px;
-  color: black;
+#site-title {
+  font-family: $font-header;
+  font-size: 20px;
+  padding: none;
+  a {
+    color: black;
+  }
+  a:hover {
+  color: pink;
+  text-decoration: none;
+  }
+}
+ul {
+  a {
+    padding-left: 30px;
+    color: black;
+  }
+  a:hover {
+    color: grey;
+    text-decoration: none;
+  }
 }
 span {
   cursor: pointer;
@@ -24,6 +53,8 @@ span {
   overflow: auto;
   min-width: 200px;
 }
+
+// start Masonry.js styling
 .grid {
 margin-left: 225px;
 }
@@ -67,6 +98,8 @@ margin-left: 225px;
 .content {
   padding: 25px;
 }
+// end Masonry.js styling
+
 /* Customize container */
 @media (max-width: 768px) {
   .social {
@@ -77,4 +110,5 @@ margin-left: 225px;
     padding: 5px;
   }
 }
+
 

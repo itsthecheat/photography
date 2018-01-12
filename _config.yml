@@ -23,26 +23,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.leslielaurenb.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  itsthecheat
 TZ: America/New_york
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "assets/img/*"
-    values:
-      image: true
-
+include: ['_pages']
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 exclude: []
 sass:
+  style: compressed
   load_paths:
     -_sass
     -_node_modules

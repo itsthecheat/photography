@@ -1,0 +1,26 @@
+
+[{
+  "gallery": "faces",
+  "path": "/assets/img/faces/faces_jay.jpg",
+  "title": "Jay, 2012"
+},
+{
+"gallery": "faces",
+"path": "/assets/img/faces/faces_maria.jpg",
+"title": "Maria, 2013"
+},
+{
+ "gallery": "faces",
+ "path": "/assets/img/faces/faces_royal.jpg",
+ "title": "Royal, 2012"
+},
+{
+  "gallery": "faces",
+  "path": "/assets/img/faces/faces_keifer.jpg",
+  "title": "Keifer, 2012"
+},
+{
+  "gallery": "faces",
+  "path": "/assets/img/faces/faces_renee.jpg",
+  "title": "Renee, 2013"
+}]

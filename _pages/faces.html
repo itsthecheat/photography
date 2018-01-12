@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: "/faces/"
+---
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  {% for image in site.data.faces %}
+    <div class="grid-item">
+      <img src="{{ image.path }}" class="image">
+    </div>
+    {% endfor %}
+</div><!-- end grid div -->
