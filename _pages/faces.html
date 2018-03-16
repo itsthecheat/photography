@@ -2,12 +2,15 @@
 layout: default
 permalink: "/faces/"
 ---
-
-<div class="grid">
-  <div class="grid-sizer"></div>
-  {% for image in site.data.faces %}
-    <div class="grid-item">
-      <img src="{{ image.path }}" class="image">
-    </div>
-    {% endfor %}
-</div><!-- end grid div -->
+<div class="row">
+  <div class="content container-fluid">
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      {% for image in site.data.faces %}
+        <div class="grid-item">
+          <a class="gallery" href="{{ image.path }}"><img src="{{ image.path }}" class="image" alt="{{ image.title }}"></a>
+        </div>
+        {% endfor %}
+    </div><!-- end grid div -->
+  </div> <!-- end container -->
+</div> <!-- end row -->

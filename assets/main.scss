@@ -17,13 +17,41 @@ body .wrapper {
   margin: 0 auto;
   padding: 10px;
 }
+.caption {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0 20px;
+}
+#collapseExample {
+  background-color: white;
+  padding: 10px;
+}
+.container-fluid {
+  padding: 50px 0 0 0;
+}
+.content {
+  padding: 25px;
+}
 i {
   padding: 2px;
+}
+#left {
+  padding: 0;
+}
+.row-fluid {
+  text-align: center;
+}
+#sidebar{
+  padding: 0 0 0 5px;
+  overflow: auto;
+  min-width: 230px;
+  position: absolute;
 }
 #site-title {
   font-family: $font-header;
   font-size: 20px;
   padding: none;
+  letter-spacing: 1px;
   a {
     color: black;
   }
@@ -31,6 +59,14 @@ i {
   color: pink;
   text-decoration: none;
   }
+}
+.social {
+  float: right;
+  padding: 5px;
+  list-style-type: none;
+}
+span {
+  cursor: pointer;
 }
 ul {
   a {
@@ -42,21 +78,41 @@ ul {
     text-decoration: none;
   }
 }
-span {
-  cursor: pointer;
-}
-.social {
-  float: right;
-}
-#sidebar{
-  padding: 2px;
-  overflow: auto;
-  min-width: 200px;
+ul.social {
+  li {
+    display: inline;
+  }
 }
 
-// start Masonry.js styling
+//featherlight.js lightbox styling//////////////////////////
+.featherlight-next span {
+  text-shadow: none;
+}
+.featherlight-next:hover {
+  background: none;
+}
+.featherlight-previous span {
+  text-shadow: none;
+}
+.featherlight-previous:hover {
+  background: none;
+}
+.featherlight .featherlight-content {
+  max-height: 99%;
+  overflow: visible;
+  padding: 10px 10px 0;
+  border-bottom: 30px solid transparent;
+}
+.featherlight .featherlight-close-icon {
+  background: transparent;
+  color: white;
+  padding: 10px 30px;
+  width: 30px;
+}
+
+// start Masonry.js styling///////////////////////
 .grid {
-margin-left: 225px;
+margin-left: 255px;
 }
 .grid-item {
   float: left;
@@ -87,6 +143,9 @@ margin-left: 225px;
   .grid-sizer { width: 100%; }
   .grid-item { width: 100%; }
 }
+.home-image {
+  padding: 50px 0 0 0;
+}
 .image{
     max-width: 100%;
     margin: 0;
@@ -95,9 +154,7 @@ margin-left: 225px;
 .image:after {
     clear:both;
 }
-.content {
-  padding: 25px;
-}
+
 // end Masonry.js styling
 
 /* Customize container */
@@ -105,10 +162,7 @@ margin-left: 225px;
   .social {
     float: right;
   }
-  body.wrapper {
-    margin: 0 auto;
-    padding: 5px;
-  }
+
 }
 
 

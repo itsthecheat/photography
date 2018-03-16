@@ -23,12 +23,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.leslielaurenb.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  itsthecheat
 TZ: America/New_york
-include: ['_pages']
+include: ['_pages, _node_modules']
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
-exclude: []
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 sass:
   style: compressed
   load_paths:
